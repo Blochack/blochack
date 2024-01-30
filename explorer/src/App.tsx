@@ -200,23 +200,24 @@ function App() {
         <div>
             <div className='flex justify-center items-center mt-3'>
                 <div className='w-full lg:w-1/2 mx-auto '>
-                    <div className='border-b'>
+                    <div className='border-b border-b-gray-400'>
                         <div className='flex justify-between items-center p-3'>
                             {treeData &&
-                                <Button variant='ghost' onClick={clearState}>
-                                    <Back className='w-4 h-4'/>
+                                <Button className="hover:bg-primary hover:text-inherit" variant='ghost' onClick={clearState}>
+                                    <Back className='w-4 h-4 hover:text-inherit'/>
                                 </Button>}
 
                             <h4 className='text-md md:text-xl font-semibold'>Blochack Explorer</h4>
 
 
                             <Select value={currentChain?.chainId} onValueChange={(value) => handleChainChange(value)}>
-                                <SelectTrigger className="w-[85px] md:w-[180px]">
+                                <SelectTrigger className="w-[85px] md:w-[180px] border-primary">
                                     <SelectValue placeholder="Select Chain"/>
                                 </SelectTrigger>
-                                <SelectContent>
+                                <SelectContent className="bg-background hover:bg-background border-primary text-inherit">
                                     {
                                         chains.map(chain => <SelectItem
+                                            className="hover:bg-background hover:text-inherit"
                                             key={chain.chainId}
                                             value={chain.chainId}>
                                             {chain.name}
@@ -262,10 +263,10 @@ function App() {
                             value={address}
                             placeholder='Enter an Ethereum address or ENS domain...'
                             onChange={(e) => setAddress(e.target.value)}
-                            className="mt-1 py-6 mb-5 w-full"/>
+                            className="mt-1 py-6 mb-3 w-full border-primary rounded-3xl"/>
 
                         <Button
-                            className='mt-3 py-6 w-full'
+                            className='mt-3 py-6 w-full rounded-3xl'
                             onClick={handleExploreButtonClick}
                             disabled={isFetching}>
                             Explore
@@ -318,7 +319,7 @@ const TransactionDialog = ({transaction, chain, isOpen, toggleOpen}: {
 
     return (
         <Dialog open={isOpen} onOpenChange={toggleOpen}>
-            <DialogContent className="sm:max-w-[425px] overflow-y-scroll max-h-screen">
+            <DialogContent className="sm:max-w-[425px] border-primary overflow-y-scroll max-h-screen">
                 <DialogHeader className='mb-5'>
                     <DialogTitle className='text-left'>Transaction</DialogTitle>
                 </DialogHeader>
@@ -355,7 +356,7 @@ const TransactionDialog = ({transaction, chain, isOpen, toggleOpen}: {
                                 {transaction?.transaction_hash ? truncateAddress(transaction.transaction_hash) : ''}
                             </a>
 
-                            <External className='w-3 h-3'/>
+                            <External className='w-3 h-3 text-primary'/>
                         </div>
                     </li>
 
@@ -370,7 +371,7 @@ const TransactionDialog = ({transaction, chain, isOpen, toggleOpen}: {
                                 {transaction?.block_number}
                             </a>
 
-                            <External className='w-3 h-3'/>
+                            <External className='w-3 h-3 text-primary'/>
                         </div>
                     </li>
 
