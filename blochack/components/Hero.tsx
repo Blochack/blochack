@@ -18,7 +18,7 @@ export const Hero = () => {
                             Trace the flow of funds across multiple chains with ease, with clear, visual insights of your wallet transactions.
                         </p>
                         <div className="mt-8 flex flex-wrap gap-x-6 gap-y-4">
-                            <Link href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                            <Link target="_blank" href="https://explorer.blochack.com">
                                 <Button
 
                                     variant="outline"
