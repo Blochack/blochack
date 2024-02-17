@@ -10,16 +10,16 @@ import { Container } from '@/components/container';
 import { Logo } from '@/components/logo';
 
 const headerNav = [
-    {
-        id: 1,
-        name: "Blog",
-        link: "./blog"
-    },
-    {
-        id: 2,
-        name: "About",
-        link: "./about"
-    }
+    // {
+    //     id: 1,
+    //     name: "Blog",
+    //     link: "./blog"
+    // },
+    // {
+    //     id: 2,
+    //     name: "About",
+    //     link: "./about"
+    // }
 ];
 
 function MobileNavigation() {
