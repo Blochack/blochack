@@ -9,7 +9,7 @@ import { Button } from '@/components/ui/button';
 import { Container } from '@/components/container';
 import { Logo } from '@/components/logo';
 
-const headerNav = [
+const headerNav: any[] = [
     // {
     //     id: 1,
     //     name: "Blog",
