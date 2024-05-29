@@ -8,7 +8,7 @@ export const Topics = () => {
         <div className="overflow-hidden pb-20 mb-60 sm:pb-32 lg:pb-32 xl:pb-36">
             <Container>
                 <BlogNav />
-                <div className="grid gap-4 grid-cols-3">
+                <div className="grid gap-4 md:grid-cols-3 sm:grid-cols-1">
                     <div className="mt-8">
                         <div className="relative bg-[url('/images/blogImg1.png')] rounded-xl h-[266px]">
                             <p className="absolute right-4 top-4 bg-[rgba(39,42,50,0.6)] text-sm py-2 px-4 bg-transparent-100 rounded-full">Partnership</p>

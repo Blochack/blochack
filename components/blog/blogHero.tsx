@@ -5,11 +5,11 @@ import { Container } from "@/components/container";
 
 export const BlogHero = () => {
     return (
-        <div className="overflow-hidden pt-20 sm:py-32 lg:pb-32 xl:pb-36">
+        <div className="overflow-hidden pt-20 sm:py-32 lg:pb-32 xl:pb-36 md:py-20">
             <Container>
                 <div className="">
-                    <div className="relative z-10 w-6/12">
-                        <h1 className="text-5xl font-bold tracking-tight ">
+                    <div className="relative z-10 md:w-6/12 sm:w-full">
+                        <h1 className="text-5xl font-bold tracking-tight">
                         Navigating the Crypto Security with BlocHack
                         </h1>
                         <p className="mt-6 text-xl text-gray-600">
