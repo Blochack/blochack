@@ -16,9 +16,9 @@ export const FooterFoot = () => {
                         </div>
                     </div>
                     <div className="flex flex-row justify-end w-full gap-5 cursor-pointer text-[#D1D5DB] text-base">
-                        <p className="hover:text-primary">About</p>
-                        <p className="hover:text-primary">Blog</p>
-                        <p className="hover:text-primary">Hack Explorer</p>
+                        <p className="hover:text-primary transition ease-in-out duration-200">About</p>
+                        <p className="hover:text-primary transition ease-in-out duration-200">Blog</p>
+                        <p className="hover:text-primary transition ease-in-out duration-200">Hack Explorer</p>
                     </div>
                 </div>
             </div>
