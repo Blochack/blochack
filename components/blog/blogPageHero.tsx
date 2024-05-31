@@ -6,7 +6,7 @@ export const BlogPageHero = () => {
         <div className="overflow-hidden">
             <Container>
                 <div className="bg-[url('/images/blogjumbo.png')] bg-no-repeat bg-bottom h-[65vh] py-44 relative">
-                   <div className="absolute bottom-0 w-full px-14 py-14">
+                   <div className="absolute bottom-0 w-full px-14 pt-14 pb-5">
                         <h1 className="text-[52px] leading-tight tracking-tight pt-auto w-6/12">
                         Phishing Defense Powered by BlocHack
                         </h1>

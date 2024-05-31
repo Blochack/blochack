@@ -1,6 +1,6 @@
-import { Footer } from '@/components/Footer';
+import { FooterFoot } from '@/components/FooterFoot';
 import { BlogPageHero } from '@/components/blog/blogPageHero';
-import { Topics } from '@/components/blog/topics';
+import { BlogDetail } from '@/components/blog/blogDetail';
 import { PreventionLoss } from '@/components/sections/PreventionLoss';
 import { RealTimeIntel } from '@/components/sections/RealTimeIntel';
 import { VisualizeTransactions } from '@/components/sections/VisualizeTransactions';
@@ -11,8 +11,8 @@ export default function Home() {
   return (
     <div>
       <BlogPageHero />
-      <Topics />
-      <Footer />
+      <BlogDetail />
+      <FooterFoot />
     </div>
   )
 }
