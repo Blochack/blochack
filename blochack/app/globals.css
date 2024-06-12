@@ -86,4 +86,22 @@
   .flx {
     @apply flex flex-row justify-between items-center
   }
+  .success {
+    @apply border-[#16A34A] px-4 border-2 rounded-3xl bg-[#122118] py-1 text-white backdrop-opacity-5
+  }
+}
+
+.cancel:hover {
+  transform: rotate(270deg);
+  transition: 0.5s ease-in-out;
+  /* animation: spin-once 0.5s forwards ease-in-out; */
+}
+
+@keyframes spin-once {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    ransform: rotate(360deg);
+  }
 }
