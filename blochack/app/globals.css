@@ -81,7 +81,7 @@
     @apply bg-[#333333] w-[2px] h-24 absolute -rotate-45
   }
   .trnx-ctn {
-    @apply absolute top-0 right-10 bg-[#131313] rounded-xl w-[30vw] h-auto max-h-[100vh] p-5 overflow-auto;
+    @apply absolute top-0 right-10 bg-[#131313] rounded-xl w-auto min-w-[50vw] h-auto max-h-[100vh] p-5 overflow-auto;
   }
   .flx {
     @apply flex flex-row justify-between items-center
