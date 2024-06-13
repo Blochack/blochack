@@ -12,6 +12,7 @@ import { Container } from '@/components/container';
 // import { HLinks } from '../components/HLinks';
 import { HackLinks } from '../components/HackLinks';
 import { useState } from 'react';
+import { HLinks } from '../components/HLinks';
 
 export default function Home() {
     const [showDetails, setShowDetails] = useState(true)
@@ -20,7 +21,8 @@ export default function Home() {
     <>
         {/* <HLinks /> */}
         <div onClick={() => setShowDetails(true)}>
-            <HackLinks />
+            {/* <HackLinks /> */}
+            <HLinks />
         </div>
 
     </>

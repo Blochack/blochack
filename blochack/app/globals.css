@@ -89,6 +89,33 @@
   .success {
     @apply border-[#16A34A] px-4 border-2 rounded-3xl bg-[#122118] py-1 text-white backdrop-opacity-5
   }
+  .root-node {
+    fill: red
+  }
+  .tree-svg {
+    @apply w-full h-full min-h-[100vh] max-w-[100vw] flex flex-row justify-center items-center;
+  }
+  .tree-svg > g {
+    transform: translate(50%, 30px);
+  }
+  .tree-svg g{
+    fill: #373737;
+    stroke: #373737
+  }
+  .tree-svg text{
+    fill: #ffffff;
+    font-weight: 300;
+  }
+  .tree-svg path {
+    stroke: #373737
+  }
+  .root-ctn {
+    fill: #E84142 !important;
+    stroke: #E84142 !important;
+  }
+  .path-class {
+    @apply bg-[#373]
+  }
 }
 
 .cancel:hover {

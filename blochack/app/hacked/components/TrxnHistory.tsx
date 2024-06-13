@@ -1,9 +1,9 @@
-export const TrxnHistory = () => {
+export const TrxnHistory = ({closeModal}) => {
   return (
-    <div className="trnx-ctn card">
+    <div className="trnx-ctn card z-50 mt-24">
           <div className="header flex flex-row justify-between align-center">
             <p className="text-[18px] text-[#F3F4F6]">Transaction History</p>
-           <img src="/images/cancel.svg" className='cursor-pointer cancel'/>
+           <img src="/images/cancel.svg" className='cursor-pointer cancel' onClick={() => {closeModal()}}/>
           </div>
           <div className="body mt-7">
             <div className='flx p-6 bg-[#080808] border-2 border-[#202020] rounded-xl'>
